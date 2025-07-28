@@ -21,32 +21,74 @@ Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):
 ## 🛠 Panduan Instalasi & Menjalankan Software  
 
 ### Prasyarat  
-- Daftar dependensi (contoh):
-  - Python 3.10+
+- Daftar dependensi :
+  - PHP v8.2+
   - Node.js v18+
   - MySQL 8.0
-  - [Lainnya...]
+  - Composer
+  - Git
 
-### Langkah-langkah  
-1. **Clone Repository**  
-   ```bash
-   git clone https://github.com/Informatics-ITS/TA.git
-   ```
-2. **Instalasi Dependensi**
-   ```bash
-   cd [folder-proyek]
-   pip install -r requirements.txt  # Contoh untuk Python
-   npm install  # Contoh untuk Node.js
-   ```
-3. **Konfigurasi**
-- Salin/rename file .env.example menjadi .env
-- Isi variabel lingkungan sesuai kebutuhan (database, API key, dll.)
+### Langkah-langkah
+1. **Clone Repository**
+   - Clone repositori dari GitHub dengan perintah berikut:
+     ```bash
+     git clone https://github.com/Informatics-ITS/ta-Ansell10.git
+     cd ta-Ansell10
+     ```
+
+2. **Instalasi Dependensi & Konfigurasi Backend**
+   - Arahkan ke direktori **backend** dan instal dependensi menggunakan **Composer**:
+     ```bash
+     cd backend
+     composer install
+     ```
+   - Salin file `.env.example` menjadi `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - **Buka file `.env`** dan sesuaikan pengaturan **`APP_URL`** untuk backend. Misalnya, jika backend berjalan di port **8000**:
+     ```env
+     APP_URL=http://localhost:8000
+     ```
+   - Jalankan perintah berikut untuk menghasilkan aplikasi key, migrasi database, dan menjalankan seeder:
+     ```bash
+     php artisan key:generate    # Menghasilkan aplikasi key
+     php artisan migrate         # Menjalankan migrasi database
+     php artisan db:seed         # Menjalankan seeder untuk mengisi database dengan data default
+     ```
+
+3. **Instalasi Dependensi & Konfigurasi Frontend**
+   - Arahkan ke direktori **frontend** dan instal dependensi menggunakan **npm**:
+     ```bash
+     cd ../frontend
+     npm install
+     ```
+   - Salin file `.env.example` menjadi `.env.local`:
+     ```bash
+     cp .env.example .env.local
+     ```
+   - **Buka file `.env.local`** dan sesuaikan URL API backend di **`NEXT_PUBLIC_API_URL`** untuk frontend. Misalnya, jika frontend berjalan di port **3000** dan backend di **8000**, atur **`NEXT_PUBLIC_API_URL`** di frontend seperti berikut:
+     ```env
+     NEXT_PUBLIC_API_URL=http://localhost:8000/api
+     ```
+
 4. **Jalankan Aplikasi**
-   ```bash
-   python main.py  # Contoh untuk Python
-   npm start      # Contoh untuk Node.js
-   ```
-5. Buka browser dan kunjungi: `http://localhost:3000` (sesuaikan dengan port proyek Anda)
+   - **Jalankan Backend**:
+     Setelah konfigurasi selesai di backend, jalankan server Laravel:
+     ```bash
+     cd ../backend
+     php artisan serve
+     ```
+   - **Jalankan Frontend**:
+     Untuk menjalankan aplikasi frontend, gunakan perintah berikut di direktori frontend:
+     ```bash
+     cd ../frontend
+     npm start
+     ```
+
+5. **Buka Browser dan Kunjungi**
+   - **Backend**: [http://localhost:8000](http://localhost:8000) (Untuk API dan aplikasi backend)
+   - **Frontend**: [http://localhost:3000](http://localhost:3000) (Untuk aplikasi frontend)
 
 ---
 
@@ -58,18 +100,8 @@ Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):
 
 ---
 
-## ✅ Validasi
-
-Pastikan proyek memenuhi kriteria berikut sebelum submit:
-- Source code dapat di-build/run tanpa error
-- Video demo jelas menampilkan fitur utama
-- README lengkap dan terupdate
-- Tidak ada data sensitif (password, API key) yang ter-expose
-
----
-
 ## ⁉️ Pertanyaan?
 
-Hubungi:
-- Penulis: [syomeronansell@gmail.com]
-- Pembimbing Utama: [email@pembimbing]
+Hubungi: 
+- Penulis: syomeronansell@gmail.com
+- Pembimbing Utama: adhatus@if.its.ac.id
