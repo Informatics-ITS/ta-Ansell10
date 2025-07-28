@@ -1,10 +1,10 @@
 # 🏁 Tugas Akhir (TA) - Final Project
 
-**Nama Mahasiswa**: Syomeron Ansell Widjaya 
-**NRP**: 5025211250 
-**Judul TA**: Pengembangan *Website* Pemantauan dan Personalisasi gizi pada Modul *Food Diary* dan Perhitungan *Total Daily Energy Expenditure*  
-**Dosen Pembimbing**: Ir. Adhatus Solichah Ahmadiyah, S.Kom., M.Sc.  
-**Dosen Ko-pembimbing**: Ratih Nur Esti Anggraini, S.Kom., M.Sc., Ph.D.
+**Nama Mahasiswa**: Syomeron Ansell Widjaya <br>
+**NRP**: 5025211250 <br>
+**Judul TA**: Pengembangan *Website* Pemantauan dan Personalisasi gizi pada Modul *Food Diary* dan Perhitungan *Total Daily Energy Expenditure* <br>
+**Dosen Pembimbing**: Ir. Adhatus Solichah Ahmadiyah, S.Kom., M.Sc. <br>
+**Dosen Ko-pembimbing**: Ratih Nur Esti Anggraini, S.Kom., M.Sc., Ph.D. <br>
 
 ---
 
