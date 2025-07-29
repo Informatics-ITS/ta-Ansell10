@@ -46,9 +46,10 @@ Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):
      ```bash
      cp .env.example .env
      ```
-   - **Buka file `.env`** dan sesuaikan pengaturan **`APP_URL`** untuk backend. Misalnya, jika backend berjalan di port **8000**:
+   - **Buka file `.env`** dan sesuaikan pengaturan **`APP_URL`** untuk backend. Misalnya, jika frontend berjalan di port **3000** dan backend di **8000**:
      ```env
      APP_URL=http://localhost:8000
+     FRONTEND_URL=http://localhost:3000
      ```
    - Jalankan perintah berikut untuk menghasilkan aplikasi key, migrasi database, dan menjalankan seeder:
      ```bash
@@ -67,7 +68,7 @@ Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):
      ```bash
      cp .env.example .env.local
      ```
-   - **Buka file `.env.local`** dan sesuaikan URL API backend di **`NEXT_PUBLIC_API_URL`** untuk frontend. Misalnya, jika frontend berjalan di port **3000** dan backend di **8000**, atur **`NEXT_PUBLIC_API_URL`** di frontend seperti berikut:
+   - **Buka file `.env.local`** dan sesuaikan URL API backend di **`NEXT_PUBLIC_API_URL`** untuk frontend. Misalnya, jika backend berjalan di port **8000**, atur **`NEXT_PUBLIC_API_URL`** di frontend seperti berikut:
      ```env
      NEXT_PUBLIC_API_URL=http://localhost:8000/api
      ```
