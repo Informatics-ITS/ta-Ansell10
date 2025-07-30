@@ -11,7 +11,7 @@
 ## 📺 Demo Aplikasi  
 Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):  
 
-[![Demo Aplikasi](https://github.com/Informatics-ITS/ta-Ansell10/blob/main/Tampilan%20aplikasi.png)](https://www.youtube.com/watch?v=VIDEO_ID)  
+[![Demo Aplikasi](https://github.com/Informatics-ITS/ta-Ansell10/blob/main/Tampilan%20aplikasi.png)](https://www.youtube.com/watch?v=k_QGdyLQgD0)  
 *Klik gambar di atas untuk menonton demo*
 
 ---
