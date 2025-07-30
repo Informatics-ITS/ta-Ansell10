@@ -9,8 +9,6 @@
 ---
 
 ## 📺 Demo Aplikasi  
-Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):  
-
 [![Demo Aplikasi](https://github.com/Informatics-ITS/ta-Ansell10/blob/main/Tampilan%20aplikasi.png)](https://www.youtube.com/watch?v=k_QGdyLQgD0)  
 *Klik gambar di atas untuk menonton demo*
 
@@ -95,9 +93,7 @@ Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):
 
 ## 📚 Dokumentasi Tambahan
 
-- [![Dokumentasi API]](docs/api.md)
-- [![Diagram Arsitektur]](docs/architecture.png)
-- [![Struktur Basis Data]](docs/database_schema.sql)
+- [![User Manual]](https://drive.google.com/file/d/11n1-JymXbSLNZWTwtax_e0-MshVlzz-u/view?usp=drive_link)
 
 ---
 
